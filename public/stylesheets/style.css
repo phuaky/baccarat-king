@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: #eee;
+}
+
+.table {
+  background-image: url("../images/ovalpokertable.png");
+}
+
+.journal {
+  border: 5px solid red;
+}
+.hand {
+  border: 5px solid yellow;
+}
+
+.hidden {
+  display: none;
+}
+
+#hand {
+  height: 30%;
+}
+/*
+#card {
+  height:10%;
+}*/
+
+#card {
+  width: 33% !important;
+  height: 5%;
+}

@@ -1,0 +1,12 @@
+done DEALling cards on the server
+allow individual players to see their cards
+ban joining table after join once
+ban dealing card after first dealt
+
+allow draw card
+
+on join table, check credit from database
+
+pay money
+
+on leave of table, credit into database
