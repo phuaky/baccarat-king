@@ -2,6 +2,28 @@
   var currentUserString = '<%- JSON.stringify(currentUser.get()) %>'
 </script>
 
+<div class="ui three column aligned grid">
+  <div class="row">
+    <div class="three wide column centered ">
+      <h4>Player Current Hand</h4>
+      <ul id="playerObject"></ul>
+    </div>
+  </div>
+  <div class="row" id="hand">
+  </div>
+</div>
+
+<div class="ui two column centered grid">
+  <div class="row">
+    <div class="right aligned column">
+      Current Bet: $
+    </div>
+    <div class="left aligned column" id="currentBet">
+      &nbsp---
+    </div>
+  </div>
+</div>
+
 <div class="ui centered grid">
   <div class="row">
     <div class="hidden" id="create">
@@ -24,34 +46,6 @@
     <button class="compact ui teal button" id="newRound">New Round</button>
     <button class="compact ui green button" id="deal">Deal Cards</button>
     <button class="compact ui yellow button" id="pitCards">Pit Cards</button>
-
-  </div>
-</div>
-
-<div class="ui two column centered grid">
-  <div class="row">
-    <div class="column journal" id="" style="overflow-y: scroll; height:250px;">
-      <ul id="messages"></ul>
-    </div>
-  </div>
-  <div class="row">
-    <div class="right aligned column">
-      Current Bet: $
-    </div>
-    <div class="left aligned column" id="currentBet">
-      &nbsp---
-    </div>
-  </div>
-</div>
-
-<div class="ui three column aligned grid">
-  <div class="row" id="hand">
-  </div>
-  <div class="row">
-    <div class="three wide column centered ">
-      <h4>Player Current Hand</h4>
-      <ul id="playerObject"></ul>
-    </div>
   </div>
 </div>
 

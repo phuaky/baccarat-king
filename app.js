@@ -229,6 +229,19 @@ io.on('connection', function(socket){
   })
 });//End OF SOCKET IO
 
+// Server functions
+function joinGameAsPlayer() {
+  // check if ingame true
+
+}
+
+function removeFromGame () {
+  // send credit back to account
+  // ingame = false
+  // hand clear
+  // remove from ingame table
+}
+
 // GAMELOGIC
 
 // -----Start with blank array-----

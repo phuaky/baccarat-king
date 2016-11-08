@@ -11,7 +11,8 @@ module.exports = function(sequelize, DataTypes) {
         isEmail: true
        }
     },
-    username: {
+    username:
+    {
       type: DataTypes.STRING,
       validate: {
         len: {
@@ -20,7 +21,8 @@ module.exports = function(sequelize, DataTypes) {
         }
       }
     },
-    password: {
+    password:
+    {
       type: DataTypes.STRING,
       validate: {
         len: {
@@ -29,6 +31,7 @@ module.exports = function(sequelize, DataTypes) {
         }
       }
     },
+    inGame: DataTypes.BOOLEAN,
     credits: DataTypes.STRING
   }, {
     hooks: {
@@ -40,6 +43,8 @@ module.exports = function(sequelize, DataTypes) {
     },
     classMethods: {
       associate: function(models) {
+        models.user.hasOne(models.banker);
+        models.user.hasOne(models.player);
       }
     },
     instanceMethods: {
